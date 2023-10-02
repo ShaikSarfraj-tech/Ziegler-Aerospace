@@ -13,7 +13,8 @@ const PORT = 5000 | process.env.PORT;
 
 const connect = async () => {
     try {
-        const mongo_url = 'mongodb+srv://Sarfraj:UseSarfrajData120@cluster0.rse9f.mongodb.net/ziegler_aerospace';
+        let mongo = process.env.MONGO_PASSWORD;
+        const mongo_url = `mongodb+srv://Sarfraj:${mongo}@cluster0.rse9f.mongodb.net/ziegler_aerospace`
         await mongoose.connect(mongo_url);
         console.log("Connected to mongoDB");
     } catch(error) {
