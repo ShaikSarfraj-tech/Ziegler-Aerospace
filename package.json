@@ -5,15 +5,21 @@
   "main": "index.js",
   "homepage": "https://ShaikSarfraj-tech.github.io/react-gh-pages",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:frontend": "react-scripts start",
+  "start:backend": "nodemon index.js",
+  "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "gh-pages": "^6.0.0"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1",
+    "react-scripts": "^5.0.1"
   }
 }
