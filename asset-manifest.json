@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Ziegler-Aerospace/static/css/main.4c9bba64.css",
+    "main.js": "/Ziegler-Aerospace/static/js/main.61b9394c.js",
+    "index.html": "/Ziegler-Aerospace/index.html",
+    "main.4c9bba64.css.map": "/Ziegler-Aerospace/static/css/main.4c9bba64.css.map",
+    "main.61b9394c.js.map": "/Ziegler-Aerospace/static/js/main.61b9394c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c9bba64.css",
+    "static/js/main.61b9394c.js"
+  ]
+}
